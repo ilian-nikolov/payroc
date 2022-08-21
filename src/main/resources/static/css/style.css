@@ -1,0 +1,58 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+div {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.text {
+    width: 80%;
+    background-color: #FFFDC1;
+    border: 1px solid #3578FF;
+}
+
+.parent {
+    width: 20%;
+    padding: 2%;
+    background-color: #70B0FF;
+}
+
+.label {
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+a.l:link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+a.l:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+a.l:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a.l:active {
+  text-decoration: underline;
+  font-weight: bold;
+}

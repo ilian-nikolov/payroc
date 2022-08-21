@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+<h1>Short URL</h1>
+<div class="parent">
+    <div>
+        <form action="#" th:action="@{/index}" th:object="${url}" method="get">
+            <p><a class="l" th:href="*{shortUrl}" th:text="*{shortUrl}"/></p>
+            <p><input type="submit" value="Shorten another" /> </p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

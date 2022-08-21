@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Shorten URL Service</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+<h1>URL Shortening Service</h1>
+<br/>
+<div class="parent">
+    <div>
+        <form action="#" th:action="@{/shorten}" method="post">
+            <div class="label">Enter long URL:</div>
+            <div>
+                <input class="text" type="text" name="fullUrl" />
+            </div>
+            <br/>
+            <br/> <br/>
+            <div class="offset"><input type="submit" value="Shorten" /></div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

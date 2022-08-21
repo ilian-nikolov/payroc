@@ -4,19 +4,52 @@ import java.util.Date;
 
 public class Url {
 
-    private long id;
+    private int id;
     private String fullUrl;
     private String shortUrl;
-    private String alias;
     private Date creationDate;
-    private Date expirationDate;
 
-    public long getId() {
+    public Url() {
+
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
+    }
+    public String getFullUrl() {
+        return fullUrl;
+    }
+
+    public void setFullUrl(String fullUrl) {
+        this.fullUrl = fullUrl;
+    }
+
+    public String getShortUrl() {
+        return shortUrl;
+    }
+
+    public void setShortUrl(String shortUrl) {
+        this.shortUrl = shortUrl;
+    }
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Url{" +
+                "fullUrl='" + fullUrl + '\'' +
+                ", shortUrl='" + shortUrl + '\'' +
+                ", creationDate=" + creationDate +
+                "}";
     }
 
 }
